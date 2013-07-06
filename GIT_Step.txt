@@ -2,7 +2,12 @@ Step For GIT
 
 1) $ git clone https://github.com/ilesh21190/IleshPatel.git'
 2) $ git status
-3) $ git add <File Name>(Batis_Pratice.rar) <* For All> 
-4) $ git commit -m <Message>"A Simple Batis Application with No directory Structure...1st s
+3) $ git config --global user.email "ilesh21190@gmail.com"
+4) $ git config --global user.name "Ilesh Patel"
+5) $ git add <File Name>(Batis_Pratice.rar) <* For All> 
+6) $ git commit -m <Message>"A Simple Batis Application with No directory Structure...1st s
 tep For MyBatis" <All file Commited Add in step 4>
-5) $ git push origin master
+7) $ git push origin master
+8) $ git checkout -b <BranchName> --- Create New Branch
+9) $ git checkout <BranchName> --- Switch to Branch
+10) $ git pull --- Take Upddate From GIT
