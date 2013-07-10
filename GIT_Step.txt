@@ -1,8 +1,0 @@
-Step For GIT
-
-1) $ git clone https://github.com/ilesh21190/IleshPatel.git'
-2) $ git status
-3) $ git add <File Name>(Batis_Pratice.rar) <* For All> 
-4) $ git commit -m <Message>"A Simple Batis Application with No directory Structure...1st s
-tep For MyBatis" <All file Commited Add in step 4>
-5) $ git push origin master
