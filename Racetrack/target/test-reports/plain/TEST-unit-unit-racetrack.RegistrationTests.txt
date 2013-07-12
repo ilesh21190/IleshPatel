@@ -1,0 +1,10 @@
+Testsuite: racetrack.RegistrationTests
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.11 sec
+------------- Standard Output ---------------
+--Output from testRegistrationTests--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from testRegistrationTests--
+------------- ---------------- ---------------
+
+Testcase: testRegistrationTests took 0.107 sec
