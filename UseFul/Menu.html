@@ -1,0 +1,79 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+    $('#coolMenu').find('> li').hover(function(){
+        $(this).find('ul')
+        .removeClass('noJS')
+        .stop(true, true).slideToggle('fast');
+    });
+});
+</script>
+<style>
+#coolMenu,
+#coolMenu ul {
+    list-style: none;
+}
+#coolMenu {
+    float: left;
+}
+#coolMenu > li {
+    float: left;
+}
+#coolMenu li a {
+display: block;
+    height: 2em;
+    line-height: 2em;
+    padding: 0 1.5em;
+    text-decoration: none;
+}
+#coolMenu ul {
+    position: absolute;
+    display: none;
+	z-index: 999;
+}
+#coolMenu ul li a {
+    width: 50px;
+}
+#coolMenu li:hover ul.noJS  {
+    display: block;
+}
+#coolMenu {
+    font-family: Arial;
+    font-size: 12px;
+    background: #2f8be8;
+}
+#coolMenu > li > a {
+    color: #fff;
+    font-weight: bold;
+}
+#coolMenu > li:hover > a {
+    background: #f09d28;
+    color: #000;
+}
+ 
+/* Submenu
+------------------------------------------*/
+#coolMenu ul {
+    background: #f09d28;
+}
+#coolMenu ul li a {
+    color: #000;
+}
+#coolMenu ul li:hover a {
+    background: #ffc97c;
+}
+</style>
+<ul id="coolMenu">
+    <li><a href="#">Lorem</a></li>
+    <li><a href="#">Mauricii</a></li>
+    <li>
+        <a href="#">Periher</a>
+        <ul class="noJS">
+            <li><a href="#">Hellenico</a></li>
+            <li><a href="#">Genere</a></li>
+            <li><a href="#">Indulgentia</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Tyrio</a></li>
+    <li><a href="#">Quicumque</a></li>
+</ul>
