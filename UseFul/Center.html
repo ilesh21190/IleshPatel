@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript">
+				$(document).ready(function() {
+					
+				$("#middle").hide();
+				});
+				function ShowMe()
+				{
+					$("#middle").show();
+				}
+		</script>
+		 <style type="text/css"> 
+				#mydiv {
+					position:absolute;
+					top: 50%;
+					left: 50%;
+					width:30em;
+					height:18em;
+					margin-top: -9em; /*set to a negative number 1/2 of your height*/
+					margin-left: -15em; /*set to a negative number 1/2 of your width*/
+					border: 1px solid #ccc;
+					background-color: #f3f3f3;
+				}
+
+		</style>
+
+
+
+		<style type="text/css"> 
+			.centered {  
+			  position:fixed;
+			  z-index: 100;  
+			  top:50%;  
+			  left:50%;  
+			  margin:-100px 0 0 -100px;  
+			  width:200px;  
+			  height:200px;  
+			  border:solid 1px;
+			}  
+		</style>
+	</head>
+	<body>
+		<input type="button" name="display" onclick="ShowMe()" value="Show Me"/>
+		<div class="centered" id="middle">
+			Hello
+		</div>
+		<div id="mydiv">Test Div</div>
+	</body>
+</html>
