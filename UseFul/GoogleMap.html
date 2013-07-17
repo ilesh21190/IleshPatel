@@ -1,0 +1,48 @@
+<!DOCTYPE html "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Google Maps JavaScript API Example</title>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyAZpeg6_Vk9jzShqQrZZY4wwFVprV-8CJY&sensor=false"
+            type="text/javascript"></script>
+			<script src="gclick.js" type="text/javascript"></script>
+    <script type="text/javascript">
+	
+    function initialize() {
+      if (GBrowserIsCompatible()) {
+       /* var map = new GMap2(document.getElementById("map_canvas"));
+        map.setCenter(new GLatLng(23.2200, 72.6800), 13);
+        map.setUIToDefault();*/
+		var map = new GMap2(document.getElementById("map_canvas"));
+		map.setCenter(new GLatLng(23.247066300000000000,72.637291699999990000), 18);
+	
+		// Select a map type which supports aerial imagery
+		map.setMapType(G_HYBRID_MAP);
+		map.setUIToDefault();
+	
+		// Enable the additional map types within
+		// the map type collection
+		map.enableRotation();
+		GEvent.addListener(map, "singlerightclick", function() {
+				var bounds = map.getBounds();
+				var southWest = bounds.getSouthWest();
+				var northEast = bounds.getNorthEast();
+				var lngSpan = northEast.lng() - southWest.lng();
+				var latSpan = northEast.lat() - southWest.lat();	
+				// populate yor box/field with lat, lng
+				alert("Lat=" + latSpan + "; Lng=" + lngSpan);
+		});
+		GEvent.addListener( map, "rightclick", function(p){
+				  alert( "Right!" );
+				});
+      }
+    }
+	
+
+    </script>
+  </head>
+  <body onload="initialize()" onunload="GUnload()">
+    <div id="map_canvas" style="width: 500px; height: 300px"></div>
+  </body>
+</html>
