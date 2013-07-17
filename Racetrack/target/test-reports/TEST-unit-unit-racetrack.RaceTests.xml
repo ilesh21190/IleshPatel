@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="SI-PC16" name="racetrack.RaceTests" tests="1" time="0.886" timestamp="2013-07-12T08:54:31">
+<testsuite errors="0" failures="0" hostname="SI-PC16" name="racetrack.RaceTests" tests="1" time="0.475" timestamp="2013-07-16T14:09:34">
   <properties />
-  <testcase classname="racetrack.RaceTests" name="testInMiles" time="0.802" />
+  <testcase classname="racetrack.RaceTests" name="testInMiles" time="0.402" />
   <system-out><![CDATA[--Output from testInMiles--
 ]]></system-out>
   <system-err><![CDATA[--Output from testInMiles--

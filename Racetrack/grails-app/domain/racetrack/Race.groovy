@@ -8,7 +8,7 @@ class Race {
 	String state 
 	BigDecimal distance 
 	BigDecimal cost 
-	Integer maxRunners = 100000
+	Integer maxRunners = 1000
     
 		static constraints = {
 		name(blank:false,maxSize:50) 

@@ -1,5 +1,5 @@
 Testsuite: racetrack.RaceControllerTests
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.59 sec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.598 sec
 ------------- Standard Output ---------------
 --Output from testRaceControllerTests--
 ------------- ---------------- ---------------
@@ -7,4 +7,4 @@ Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 1.59 sec
 --Output from testRaceControllerTests--
 ------------- ---------------- ---------------
 
-Testcase: testRaceControllerTests took 1.382 sec
+Testcase: testRaceControllerTests took 1.397 sec
