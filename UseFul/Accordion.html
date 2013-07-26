@@ -1,0 +1,51 @@
+ <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Droppable - Shopping Cart Demo</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  <style>
+  h1 { padding: .2em; margin: 0; }
+  #products { float:left; width: 500px; margin-right: 2em; }
+  #cart { width: 200px; float: left; margin-top: 1em; }
+  /* style the list to maximize the droppable hitarea */
+  #cart ol { margin: 0; padding: 1em 0 1em 3em; }
+  </style>
+  <script>
+  $(function() {
+    $( "#catalog" ).accordion();
+	});
+	</script>
+	</head>
+	<body>
+	<div id="catalog">
+    <h2><a href="#">T-Shirts</a></h2>
+    <div>
+      <ul>
+        <li>Lolcat Shirt</li>
+        <li>Cheezeburger Shirt</li>
+        <li>Buckit Shirt</li>
+      </ul>
+    </div>
+    <h2><a href="#">Bags</a></h2>
+    <div>
+      <ul>
+        <li>Zebra Striped</li>
+        <li>Black Leather</li>
+        <li>Alligator Leather</li>
+      </ul>
+    </div>
+    <h2><a href="#">Gadgets</a></h2>
+    <div>
+      <ul>
+        <li>iPhone</li>
+        <li>iPod</li>
+        <li>iPad</li>
+      </ul>
+    </div>
+  </div>
+  </body>
+  </html>
+  

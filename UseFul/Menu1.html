@@ -1,0 +1,65 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Menu - Icons</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css" />
+  </head>
+  <body>
+<div style="float:left;">
+      <accordion  id="accUprav" class="accUpr">
+            <h3><a href="#">Menu 1</a></h3>
+            <div>
+                  <ul id="mnuUpr">
+			<li><a href="#">Tools</a>
+				<ul>
+					<li><a href="#">3.1jQuery</a>
+					      <ul>
+						      <li><a href="#">3.1.1 Download</a></li>
+						      <li><a href="#">3.1.2 Tutorial</a></li>
+	                                      </ul>
+					</li>
+					<li><a href="#">3.2 Mootools</a></li>
+					<li><a href="#">3.3 Prototype</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Special</a></li>
+		</ul>
+	   </div>
+      </accordion>
+</div>
+<div style="float:left;">
+      <accordion  id="accOptions" class="accOpt">
+            <h3><a href="#">Menu 2</a></h3>
+            <div>
+		<ul id="mnuOpt">
+
+			<li><a href="#">Tools</a>
+				<ul>
+					<li><a href="#">3.1jQuery</a>
+					      <ul>
+						      <li><a href="#">3.1.1 Download</a></li>
+						      <li><a href="#">3.1.2 Tutorial</a></li>
+	                                      </ul>
+					</li>
+					<li><a href="#">3.2 Mootools</a></li>
+					<li><a href="#">3.3 Prototype</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Special</a></li>
+		</ul>
+	   </div>
+      </accordion>
+</div>
+<script>
+	$("accordion ul").css({width:"145px"});
+	$("accordion").accordion({ collapsible: true, active: false });
+	$("accordion div").removeClass("ui-accordion-content ui-corner-all ui-corner-bottom ui-widget-content");
+	$("#mnuUpr").menu({position: { my: "left top", at: "right+3 top" }});
+	$("#mnuUpr").hover(function(){},function(){$("#accUprav").accordion( "option", "active", "none");});
+</script>
+</body>
+</html>

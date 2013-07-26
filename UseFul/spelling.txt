@@ -1,0 +1,1 @@
+amend = ake minor changes in (a text) in order to make it fairer, more accurate, or more up-to-date
